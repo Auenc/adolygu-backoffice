@@ -1,7 +1,5 @@
 import 'package:adolygu_backoffice/controllers/counter_controller.dart';
-import 'package:adolygu_backoffice/controllers/theme_controller.dart';
 import 'package:adolygu_backoffice/pages/other.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -9,7 +7,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final CounterController counterController = Get.put(CounterController());
-    final ThemeController darkThemeController = Get.put(ThemeController());
 
     return Scaffold(
         body: Container(
