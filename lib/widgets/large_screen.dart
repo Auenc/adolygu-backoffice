@@ -9,13 +9,13 @@ class LargeScreen extends StatelessWidget {
       children: [
         Expanded(
           child: Container(
-            color: Colors.red,
+            color: Theme.of(context).backgroundColor,
           ),
         ),
         Expanded(
           flex: 5,
           child: Container(
-            color: Colors.white,
+            color: Theme.of(context).backgroundColor,
           ),
         ),
       ],

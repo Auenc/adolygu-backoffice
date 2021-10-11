@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class Other extends StatelessWidget {
+  const Other({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final CounterController _counterController = Get.find();
@@ -13,12 +15,12 @@ class Other extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text("Button was clicked ${_counterController.counter.value}"),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           ElevatedButton(
             onPressed: () => {Get.back()},
-            child: Text("Open other screen"),
+            child: const Text("Open other screen"),
           )
         ],
       ),
